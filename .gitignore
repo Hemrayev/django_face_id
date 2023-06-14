@@ -1,0 +1,9 @@
+venv
+.idea
+static
+core/migrations
+face_recognizer/Photo's_Data/Begench Hamrayev
+face_recognizer/Photo's_Data/Begenç Hamraýew
+face_recognizer/KnownFaces/0.jpg
+face_recognizer/KnownFaces/1.jpg
+face_recognizer/KnownFaces/2.jpg

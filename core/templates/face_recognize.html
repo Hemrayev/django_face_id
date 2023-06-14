@@ -1,0 +1,103 @@
+{% load static i18n%}
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% trans 'Ulgama suratyňyzy goşmak' %}</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="{% static '/images/camera.png' %}" rel="icon">
+
+    <link rel="stylesheet" href="{% static '/vendors/bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/vendors/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static '/vendors/themify-icons/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static '/vendors/flag-icon-css/css/flag-icon.min.css' %}">
+    <link rel="stylesheet" href="{% static '/vendors/selectFX/css/cs-skin-elastic.css' %}">
+    <!--    <link rel="stylesheet" href="vendors/jqvmap/dist/jqvmap.min.css">-->
+
+
+    <link rel="stylesheet" href="{% static '/assets/css/style.css' %}">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<!-- Left Panel -->
+
+{% include 'inc/_sidebar.html' %}<!-- /#left-panel -->
+
+<!-- Left Panel -->
+
+<!-- Right Panel -->
+
+<div id="right-panel" class="right-panel">
+
+    <!-- Header-->
+    {% include 'inc/_navbar.html' %}<!-- /header -->
+    <!-- Header-->
+
+
+    <div class="content mt-3">
+        <div class="animated fadeIn">
+
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 ml-auto mr-auto">
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>{% trans 'Ýüz' %}</strong> <small> {% trans 'goşmak' %}</small>
+                        </div>
+                        <div class="card-body card-block">
+                            <h1 style="text-align: center">{% trans 'Haýyş ýüzüňizi göni kamera seredip, saga tarap aýlaň we çepe tarap aýlaň' %}</h1>
+                              <div class="card-img">
+                                  <img src="{% static '/images/2422711.png' %}">
+                              </div>
+                            <br>
+
+                                <div class="form-group" style="text-align: center">
+                                    <button class="btn btn-light" type="submit">{% trans 'Ulgama goş' %}</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div><!-- .animated -->
+    </div><!-- .content -->
+
+</div><!-- /#right-panel -->
+
+<!-- Right Panel -->
+
+
+<script src="{% static  '/vendors/jquery/dist/jquery.min.js'%}"></script>
+<script src="{% static  '/vendors/popper.js/dist/umd/popper.min.js'%}"></script>
+<script src="{% static  '/vendors/bootstrap/dist/js/bootstrap.min.js'%}"></script>
+<script src="{% static  '/assets/js/main.js'%}"></script>
+<script src="{% static  '/vendors/chosen/chosen.jquery.min.js'%}"></script>
+
+<script>
+    jQuery(document).ready(function() {
+        jQuery(".standardSelect").chosen({
+            disable_search_threshold: 10,
+            no_results_text: "Oops, nothing found!",
+            width: "100%"
+        });
+    });
+</script>
+
+</body>
+
+</html>

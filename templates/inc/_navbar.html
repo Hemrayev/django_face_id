@@ -1,0 +1,60 @@
+{% load static i18n %}
+
+<style>
+    select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 1px!important;
+        background: #94a5e194;
+        border-radius: 10px;
+        font-size: large;
+    }
+    select::-ms-expand{
+        display: none;
+    }
+    .select{
+        padding-top: 5px;
+    }
+
+</style>
+
+<header id="header" class="header">
+
+    <div class="header-menu">
+
+        <div class="col-sm-7">
+            <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+        </div>
+
+        <div class="col-sm-3"></div>
+
+        <div class="col-md-1 ml-auto" style="text-align: end">
+
+{#            <form action="{% url 'set_language' %}" method="post">#}
+{#                {% csrf_token %}#}
+{#                <input name="next" type="hidden" value="{{ redirect_to }}">#}
+{#                <div class="select">#}
+{##}
+{#                    <select name="language"  onchange="this.form.submit()">#}
+{#                        {% get_current_language as LANGUAGE_CODE %}#}
+{#                        {% get_available_languages as LANGUAGES %}#}
+{#                        {% get_language_info_list for LANGUAGES as languages %}#}
+{#                        {% for language in languages %}#}
+{#                            <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>#}
+{#                              {{ language.name }}#}
+{#                            </option>#}
+{#                        {% endfor %}#}
+{#                    </select>#}
+{#                </div>#}
+{#            </form>#}
+        </div>
+
+        <div class="col-xl-1">
+            <a class="nav-link" href="{% url 'logout' %}" style="text-align: end;color: black"><i class="fa fa-power-off"></i></a>
+        </div>
+    </div>
+</header>
